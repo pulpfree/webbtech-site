@@ -3,7 +3,8 @@ import { createGlobalStyle, ThemeProps } from 'styled-components'
 export const theme = {
   fonts: {
     basic: 'Helvetica, sans-serif',
-    accent: '"Permanent Marker", cursive',
+    // accent: '"Permanent Marker", cursive',
+    accent: 'cursive',
   },
   colors: {
     orange: '#f4ae40',
@@ -26,12 +27,11 @@ export const GlobalStyle = createGlobalStyle<MainThemeProps>`
   *::after,
   *::before { box-sizing: border-box; }
 
-  h1, h2, h3, h4, h5, h6 { margin: 0; }
-  a { color: ${({ theme }) => theme.colors.blue} }
-  a:hover { color: ${({ theme }) => theme.colors.pink} }
+  // h1, h2, h3, h4, h5, h6 { margin: 0; }
 
   .main {
-    padding: 70px 0 20px;
+    padding: 80px 10px 20px;
     min-height: calc(100vh - 50px);
+    background-color: #000000;
   }
 `

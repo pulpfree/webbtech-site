@@ -6,23 +6,29 @@ export const Container = styled.header`
   left: 0;
   right: 0;
 
-  height: 50px;
+  height: 70px;
   padding: 7px 0;
 
   background-color: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  // border-bottom: solid 1px #000000;
 `
 
-export const Logo = styled.h1`
-  font-size: 1.6rem;
-  font-family: ${(p) => p.theme.fonts.accent};
+export const Logo = styled.div`
+  margin-top: 7px;
+  float: left;
 
   a {
     text-decoration: none;
-    color: black;
+    outline: none;
+    border: none;
   }
+`
 
-  a:hover {
-    color: ${(p) => p.theme.colors.pink};
-  }
+export const Menu = styled.div`
+  float: left;
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 500px;
 `

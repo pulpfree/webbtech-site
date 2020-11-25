@@ -11,7 +11,8 @@ function MainApp({ Component, pageProps }) {
     <ThemeProvider theme={theme}>
       <GlobalStyle theme={theme} />
       <Head>
-        <title>Webbtech -- ok</title>
+        <title>Webbtech - Home</title>
+        <meta name="description" content="Webbtech Home Site" />
       </Head>
 
       <Header />
